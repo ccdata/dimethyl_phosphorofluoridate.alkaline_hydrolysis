@@ -1,1 +1,1 @@
-# Computational pathways and transition states of chemical reactions
+# Pathways and transition states of chemical reactions
