@@ -1,0 +1,33 @@
+ $system timlim=999888777
+         mwords=100 $end
+ $contrl exetyp=run
+         runtyp=energy scftyp=rhf
+         icharg=-1 mult=1 units=angs coord=unique
+         maxit=50 ispher=1 qmttol=1d-6 icut=12 itol=22 $end
+ $scf    dirscf=.t. diis=.t. soscf=.f.
+         fdiff=.f. conv=1d-6
+         npreo(1)=0,-1,1,9999 $end
+ $elmom  iemom=3 iemint=0 iamm=9 cum=.t. ibond=0 $end
+ $basis  gbasis=n311 ngauss=6
+         ndfunc=1 npfunc=1 diffsp=.t. diffs=.t. $end
+ $DATA
+TS1a_hfd_irc200_all_revmov.pdb
+C1
+P     15.0     0.00400   0.05100  -0.02200 
+O      8.0     0.10400  -0.21100   1.58700 
+O      8.0     1.19600   0.32600  -0.87500 
+F      9.0     0.06400  -1.60800  -0.13100 
+O      8.0    -1.50200  -0.12300  -0.62900 
+C      6.0    -2.15200   0.85600  -1.37700 
+H      1.0    -2.56200   1.63700  -0.75000 
+H      1.0    -1.48900   1.30900  -2.10700 
+H      1.0    -2.95700   0.35400  -1.90500 
+C      6.0     0.64900   0.70400   2.48600 
+H      1.0     0.88200   0.14300   3.38800 
+H      1.0     1.56500   1.14300   2.10800 
+H      1.0    -0.04500   1.49800   2.72500 
+O      8.0    -0.33600   1.73300   0.29100 
+H      1.0     0.33500   2.20800  -0.17500 
+ $END
+
+
